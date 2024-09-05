@@ -1,0 +1,7 @@
+document.addEventListener('DOMContentLoaded', function()
+{
+    const element = document.querySelector(".bg");
+    if (element) {
+        element.remove();
+    } 
+    });
