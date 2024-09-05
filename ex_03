@@ -1,10 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() 
 { 
-    const newParagraph = document.createElement('p');
-    newParagraph.textContent = "Now featuring a headphone jack!";
-    const paragraphs = document.getElementsByTagName('p');
-    const thirdParagraph = paragraphs[2];
-    if (thirdParagraph) {
-        thirdParagraph.insertAdjacentElement('afterend', newParagraph);
-    }
+    var paragraph = document.getElementById("description");    
+    var p = document.createElement('p')
+    p.innerHTML = "Now featuring a headphone jack!";
+    paragraph.appendChild(p);
 });
